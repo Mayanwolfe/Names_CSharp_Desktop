@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Names"
         mc:Ignorable="d"
-        Title="MainWindow" Height="360" Width="500" FontSize="16">
+        Title="MainWindow" Height="360" Width="500" FontSize="20">
     <Grid Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -17,7 +17,7 @@
         </Grid.ColumnDefinitions>
 
         <Label>Names</Label>
-        <ListBox Grid.Row="1" x:Name="lstNames" />
+        <ListBox Grid.Row="1" x:Name="lstNames" MouseDoubleClick="ListNames_MouseDoubleClick"/>
 
         <StackPanel Grid.Row="1" Grid.Column="1" Margin="5,0,0,0">
             <TextBox x:Name="txtName" />
