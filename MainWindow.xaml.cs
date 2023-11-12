@@ -34,5 +34,12 @@ namespace Names
             }
         }
 
+        private void ButtonDelName_Click(object sender, RoutedEventArgs e)
+        {
+            if (lstNames.SelectedItem != null)
+            {
+                lstNames.Items.Remove(lstNames.SelectedItem);
+            }
+        }
     }
 }
